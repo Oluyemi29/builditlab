@@ -1,5 +1,5 @@
 "use client";
-import AboutUs from "@/component/about/AboutUs";
+// import AboutUs from "@/component/about/AboutUs";
 import OurProjects from "@/component/features/OurProjects";
 import HeroContent from "@/component/hero/HeroContent";
 import OurSuccess from "@/component/hero/OurSuccess";
@@ -19,7 +19,7 @@ export default function Home() {
         leftButton="Start Your Journey"
         rightButton="Book a free Consultation"
       />
-      <AboutUs />
+      {/* <AboutUs /> */}
       <OurSuccess />
       <OurServices />
       <WhyUs />

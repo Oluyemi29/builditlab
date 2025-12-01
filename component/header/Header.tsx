@@ -70,27 +70,27 @@ const Header = () => {
             </Link>
           </NavbarItem>
           <NavbarItem isActive={pathName === "/service"}>
-            <Link className="text-plainWhite" href="/service">
+            <Link className="text-plainWhite" href="/">
               Services
             </Link>
           </NavbarItem>
           <NavbarItem isActive={pathName === "/industries"}>
-            <Link className="text-plainWhite" href="/industries">
+            <Link className="text-plainWhite" href="/">
               Industries
             </Link>
           </NavbarItem>
-          <NavbarItem isActive={pathName === "/casestudies"}>
-            <Link className="text-plainWhite" href="/casestudies">
+          <NavbarItem isActive={pathName === "/case-studies"}>
+            <Link className="text-plainWhite" href="/">
               Case Studies
             </Link>
           </NavbarItem>
           <NavbarItem isActive={pathName === "/insight"}>
-            <Link className="text-plainWhite" href="/insight">
+            <Link className="text-plainWhite" href="/">
               Insight
             </Link>
           </NavbarItem>
           <NavbarItem isActive={pathName === "/about"}>
-            <Link className="text-plainWhite" href="/about">
+            <Link className="text-plainWhite" href="/">
               About Us
             </Link>
           </NavbarItem>
@@ -100,7 +100,7 @@ const Header = () => {
           <NavbarItem className="hidden lg:flex">
             <Button
               as={Link}
-              href="/contact"
+              href="/"
               className="bg-transparent border-2 border-plainWhite text-plainWhite"
             >
               Contact Us

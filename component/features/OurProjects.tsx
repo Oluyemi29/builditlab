@@ -1,39 +1,39 @@
 "use client";
 
-import { Card, Image } from "@heroui/react";
-import Link from "next/link";
-import { FaLink } from "react-icons/fa6";
+import { Divider } from "@heroui/react";
+// import Link from "next/link";
+// import { FaLink } from "react-icons/fa6";
 
 const OurProjects = () => {
-  const dummyData = [
-    {
-      id: "1",
-      name: "Architecture Design",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnamoptio debitis dolores nihil ut eos itaque fuga, iusto nisi. Dolore.",
-      image:
-        "https://i.pinimg.com/736x/e0/16/a1/e016a17a8fae8942b4d9d6986eefe663.jpg",
-      link: "/",
-    },
-    {
-      id: "2",
-      name: "Interior Design",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnamoptio debitis dolores nihil ut eos itaque fuga, iusto nisi. Dolore.",
-      image:
-        "https://i.pinimg.com/736x/8b/9d/c2/8b9dc228c637b55b1b5efba4ec54f9db.jpg",
-      link: "/",
-    },
-    {
-      id: "3",
-      name: "Hospitality Design",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnamoptio debitis dolores nihil ut eos itaque fuga, iusto nisi. Dolore.",
-      image:
-        "https://i.pinimg.com/736x/19/cd/bc/19cdbc183b1d4a5cdbc8b69cb996228c.jpg",
-      link: "/",
-    },
-  ];
+  // const dummyData = [
+  //   {
+  //     id: "1",
+  //     name: "Architecture Design",
+  //     description:
+  //       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnamoptio debitis dolores nihil ut eos itaque fuga, iusto nisi. Dolore.",
+  //     image:
+  //       "https://i.pinimg.com/736x/e0/16/a1/e016a17a8fae8942b4d9d6986eefe663.jpg",
+  //     link: "/",
+  //   },
+  //   {
+  //     id: "2",
+  //     name: "Interior Design",
+  //     description:
+  //       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnamoptio debitis dolores nihil ut eos itaque fuga, iusto nisi. Dolore.",
+  //     image:
+  //       "https://i.pinimg.com/736x/8b/9d/c2/8b9dc228c637b55b1b5efba4ec54f9db.jpg",
+  //     link: "/",
+  //   },
+  //   {
+  //     id: "3",
+  //     name: "Hospitality Design",
+  //     description:
+  //       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnamoptio debitis dolores nihil ut eos itaque fuga, iusto nisi. Dolore.",
+  //     image:
+  //       "https://i.pinimg.com/736x/19/cd/bc/19cdbc183b1d4a5cdbc8b69cb996228c.jpg",
+  //     link: "/",
+  //   },
+  // ];
   return (
     <div className="w-full h-auto flex flex-col mt-5 gap-5 bg-gray-100 px-5 py-3">
       <div className="flex flex-col gap-1 justify-center items-center">
@@ -51,7 +51,7 @@ const OurProjects = () => {
         />
       </div> */}
 
-      <div className="w-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+      {/* <div className="w-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
         {dummyData.map((eachData, index) => {
           return (
             <Card key={index} className="p-3 w-full relative">
@@ -68,6 +68,14 @@ const OurProjects = () => {
             </Card>
           );
         })}
+      </div> */}
+
+      <div className="w-full flex flex-col justify-center items-center py-10">
+        <div className="md:w-2/4 w-full flex flex-col gap-3 justify-center items-center bg-kleinBlue/20">
+          <Divider className="h-1 bg-stripe-gradient-primary" />
+          <h1 className="font-semibold text-2xl text-kleinBlue">COMING SOON</h1>
+          <Divider className="h-1 bg-stripe-gradient-primary" />
+        </div>
       </div>
     </div>
   );

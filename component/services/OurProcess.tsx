@@ -29,6 +29,7 @@ const OurProcess = () => {
             A Simple, Transparent Workflow
           </h1>
 
+          {/* <Divider orientation="vertical" className="h-60 top-20 left-2.5 bg-kleinBlue/50 border-2 border-spacing-y-16 border-kleinBlue border-dotted absolute" /> */}
           <div className="flex flex-row justify-start gap-4 items-center">
             <div className="w-max p-1 rounded-full bg-kleinBlue">
               <IoMdAnalytics className="text-plainWhite" />
