@@ -25,7 +25,7 @@ const WhyUs = () => {
           <Image
             src={"/Building.png"}
             alt="Building"
-            className="md:w-[55%] md:h-[55%] w-full h-full rounded-md mx-auto hover:scale-105 transition-all duration-500 ease-in-out"
+            className="md:w-[55%] md:h-[55%] w-1/2 h-1/2 rounded-md mx-auto hover:scale-105 transition-all duration-500 ease-in-out"
           />
         </div>
         <div className="flex flex-col justify-start items-start gap-5 w-full">

@@ -38,7 +38,7 @@ const OurProjects = () => {
     <div className="w-full h-auto flex flex-col mt-5 gap-5 bg-gray-100 px-5 py-3">
       <div className="flex flex-col gap-1 justify-center items-center">
         <h1 className="text-2xl font-semibold">Featured Projects</h1>
-        <p className="text-black/70">
+        <p className="text-black/70 text-center">
           Showcasing Our Expertise - Featured Projects That Deliver Results
         </p>
       </div>

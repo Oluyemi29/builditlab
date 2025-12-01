@@ -10,7 +10,7 @@ const OurProcess = () => {
     <div className="w-full flex flex-col mt-7 gap-5 justify-center items-center">
       <div className="flex flex-col gap-1 justify-center items-center">
         <h1 className="text-2xl font-semibold">Our Process</h1>
-        <p className="text-black/70">
+        <p className="text-black/70 text-center">
           Discover how we deliver exceptional result through our proven
           methodology
         </p>
@@ -20,7 +20,7 @@ const OurProcess = () => {
           <Image
             src={"/steps.png"}
             alt="Our Process"
-            className="md:w-[60%] md:h-[60%] rounded-md w-full h-full hover:scale-105 transition-all duration-500 ease-in-out mx-auto"
+            className="md:w-[60%] md:h-[60%] rounded-md w-1/2 h-1/2 hover:scale-105 transition-all duration-500 ease-in-out mx-auto"
           />
         </div>
 

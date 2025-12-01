@@ -1,8 +1,6 @@
 "use client";
 
-import { Button } from "@heroui/react";
 import { BsBank } from "react-icons/bs";
-// import { GoDotFill } from "react-icons/go";
 import { IoMdCheckmark } from "react-icons/io";
 import { BsCurrencyExchange } from "react-icons/bs";
 import { IoSchool } from "react-icons/io5";
@@ -10,6 +8,7 @@ import { MdOutlineHealthAndSafety } from "react-icons/md";
 import { RiMotorbikeFill } from "react-icons/ri";
 import { MdRealEstateAgent } from "react-icons/md";
 import { MdHotel } from "react-icons/md";
+import Link from "next/link";
 
 const OurSuccess = () => {
   return (
@@ -68,409 +67,420 @@ const OurSuccess = () => {
       </div> */}
 
       <h1 className="text-3xl font-semibold mb-5">Industries We Serve</h1>
-
-      <div className="w-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center items-center md:gap-20 gap-14">
-        {/* Fintech  */}
-        <div className="flex flex-col justify-center items-center gap-5">
-          <div className="w-20 h-20 rounded-full bg-kleinBlue/20 flex flex-col justify-center items-center border-2 border-kleinBlue border-dotted">
-            <BsBank className="text-kleinBlue" size={30} />
-          </div>
-          <div className="flex flex-col justify-center gap-5 items-center w-full">
-            <div className="flex flex-col justify-center items-center">
-              <h1 className="text-xl font-semibold">Fintech</h1>
-              <p className="text-sm text-black/70 text-center">
-                Digital products that power secure, scalable financial
-                experiences
-              </p>
+      <div className="overflow-x-auto flex w-full">
+        <div className="flex flex-row justify-center items-center md:grid lg:grid-cols-3 md:grid-cols-2 md:gap-20 gap-3 py-4">
+          {/* Fintech  */}
+          <div className="flex w-full flex-col justify-center items-center gap-5">
+            <div className="w-20 h-20 rounded-full bg-kleinBlue/20 flex flex-col justify-center items-center border-2 border-kleinBlue border-dotted">
+              <BsBank className="text-kleinBlue" size={30} />
             </div>
-            <div className="flex flex-col gap-5 justify-start items-start w-full">
-              <p className="text-sm text-black/70">
-                We build user-friendly financial applications with strong
-                security standards, seamless transactions, and beautiful
-                interfaces.
-              </p>
-              <p className="text-sm">Solutions we build:</p>
-              <div className="w-full flex flex-col justify-start items-start">
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">
-                    Savings & investment apps
-                  </p>
-                </div>
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">
-                    Payment processing systems
-                  </p>
-                </div>
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">
-                    Wallet & card applications
-                  </p>
-                </div>
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">
-                    Lending and credit platforms
-                  </p>
-                </div>
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">
-                    KYC and onboarding systems
-                  </p>
+            <div className="flex flex-col justify-center gap-5 items-center w-screen">
+              <div className="flex flex-col justify-center items-center">
+                <h1 className="text-xl font-semibold">Fintech</h1>
+                <p className="text-sm text-black/70 text-center">
+                  Digital products that power secure, scalable financial
+                  experiences
+                </p>
+              </div>
+              <div className="flex flex-col gap-5 justify-start items-start w-full">
+                <p className="text-sm text-black/70">
+                  We build user-friendly financial applications with strong
+                  security standards, seamless transactions, and beautiful
+                  interfaces.
+                </p>
+                <p className="text-sm">Solutions we build:</p>
+                <div className="w-full flex flex-col justify-start items-start">
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      Savings & investment apps
+                    </p>
+                  </div>
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      Payment processing systems
+                    </p>
+                  </div>
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      Wallet & card applications
+                    </p>
+                  </div>
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      Lending and credit platforms
+                    </p>
+                  </div>
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      KYC and onboarding systems
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        {/* E-Commerce & Retail  */}
-        <div className="flex flex-col justify-center items-center gap-5">
-          <div className="w-20 h-20 rounded-full bg-kleinBlue/20 flex flex-col justify-center items-center border-2 border-kleinBlue border-dotted">
-            <BsCurrencyExchange className="text-kleinBlue" size={30} />
-          </div>
-          <div className="flex flex-col justify-center gap-5 items-center w-full">
-            <div className="flex flex-col justify-center items-center">
-              <h1 className="text-xl font-semibold">E-Commerce & Retail</h1>
-              <p className="text-sm text-black/70 text-center">
-                Sell smarter with robust digital storefronts and commerce
-                solutions.
-              </p>
+          {/* E-Commerce & Retail  */}
+          <div className="flex flex-col justify-center items-center gap-5">
+            <div className="w-20 h-20 rounded-full bg-kleinBlue/20 flex flex-col justify-center items-center border-2 border-kleinBlue border-dotted">
+              <BsCurrencyExchange className="text-kleinBlue" size={30} />
             </div>
-            <div className="flex flex-col gap-5 justify-start items-start w-full">
-              <p className="text-sm text-black/70">
-                Whether you’re building a startup marketplace or scaling an
-                online store, we create smooth, conversion-driven experiences
-                for your customers.
-              </p>
-              <p className="text-sm">Solutions we build:</p>
-              <div className="w-full flex flex-col justify-start items-start">
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">E-commerce websites</p>
-                </div>
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">
-                    Multi-vendor marketplaces
-                  </p>
-                </div>
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">
-                    Inventory management systems
-                  </p>
-                </div>
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">
-                    Order & delivery systems
-                  </p>
-                </div>
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">
-                    Customer loyalty platforms
-                  </p>
+            <div className="flex flex-col justify-center gap-5 items-center w-screen">
+              <div className="flex flex-col justify-center items-center">
+                <h1 className="text-xl font-semibold">E-Commerce & Retail</h1>
+                <p className="text-sm text-black/70 text-center">
+                  Sell smarter with robust digital storefronts and commerce
+                  solutions.
+                </p>
+              </div>
+              <div className="flex flex-col gap-5 justify-start items-start w-full">
+                <p className="text-sm text-black/70">
+                  Whether you’re building a startup marketplace or scaling an
+                  online store, we create smooth, conversion-driven experiences
+                  for your customers.
+                </p>
+                <p className="text-sm">Solutions we build:</p>
+                <div className="w-full flex flex-col justify-start items-start">
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">E-commerce websites</p>
+                  </div>
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      Multi-vendor marketplaces
+                    </p>
+                  </div>
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      Inventory management systems
+                    </p>
+                  </div>
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      Order & delivery systems
+                    </p>
+                  </div>
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      Customer loyalty platforms
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        {/* EdTech (Education Technology)  */}
-        <div className="flex flex-col justify-center items-center gap-5">
-          <div className="w-20 h-20 rounded-full bg-kleinBlue/20 flex flex-col justify-center items-center border-2 border-kleinBlue border-dotted">
-            <IoSchool className="text-kleinBlue" size={30} />
-          </div>
-          <div className="flex flex-col justify-center gap-5 items-center w-full">
-            <div className="flex flex-col justify-center items-center">
-              <h1 className="text-xl font-semibold">
-                EdTech (Education Technology)
-              </h1>
-              <p className="text-sm text-black/70 text-center">
-                Learning experiences designed for engagement and simplicity
-              </p>
+          {/* EdTech (Education Technology)  */}
+          <div className="flex flex-col justify-center items-center gap-5">
+            <div className="w-20 h-20 rounded-full bg-kleinBlue/20 flex flex-col justify-center items-center border-2 border-kleinBlue border-dotted">
+              <IoSchool className="text-kleinBlue" size={30} />
             </div>
-            <div className="flex flex-col gap-5 justify-start items-start w-full">
-              <p className="text-sm text-black/70">
-                We develop modern learning platforms that enhance teaching,
-                collaboration, and course delivery.
-              </p>
-              <p className="text-sm">Solutions we build:</p>
-              <div className="w-full flex flex-col justify-start items-start">
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">
-                    Online learning platforms
-                  </p>
-                </div>
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">
-                    School management systems
-                  </p>
-                </div>
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">Course creation tools</p>
-                </div>
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">
-                    Live classroom & tutoring apps
-                  </p>
-                </div>
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">
-                    Certification & assessment systems
-                  </p>
+            <div className="flex flex-col justify-center gap-5 items-center w-screen">
+              <div className="flex flex-col justify-center items-center">
+                <h1 className="text-xl font-semibold">
+                  EdTech (Education Technology)
+                </h1>
+                <p className="text-sm text-black/70 text-center">
+                  Learning experiences designed for engagement and simplicity
+                </p>
+              </div>
+              <div className="flex flex-col gap-5 justify-start items-start w-full">
+                <p className="text-sm text-black/70">
+                  We develop modern learning platforms that enhance teaching,
+                  collaboration, and course delivery.
+                </p>
+                <p className="text-sm">Solutions we build:</p>
+                <div className="w-full flex flex-col justify-start items-start">
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      Online learning platforms
+                    </p>
+                  </div>
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      School management systems
+                    </p>
+                  </div>
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      Course creation tools
+                    </p>
+                  </div>
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      Live classroom & tutoring apps
+                    </p>
+                  </div>
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      Certification & assessment systems
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        {/* HealthTech  */}
-        <div className="flex flex-col justify-center items-center gap-5">
-          <div className="w-20 h-20 rounded-full bg-kleinBlue/20 flex flex-col justify-center items-center border-2 border-kleinBlue border-dotted">
-            <MdOutlineHealthAndSafety className="text-kleinBlue" size={30} />
-          </div>
-          <div className="flex flex-col justify-center gap-5 items-center w-full">
-            <div className="flex flex-col justify-center items-center">
-              <h1 className="text-xl font-semibold">HealthTech</h1>
-              <p className="text-sm text-black/70 text-center">
-                Secure and reliable solutions for medical and wellness services
-              </p>
+          {/* HealthTech  */}
+          <div className="flex flex-col justify-center items-center gap-5">
+            <div className="w-20 h-20 rounded-full bg-kleinBlue/20 flex flex-col justify-center items-center border-2 border-kleinBlue border-dotted">
+              <MdOutlineHealthAndSafety className="text-kleinBlue" size={30} />
             </div>
-            <div className="flex flex-col gap-5 justify-start items-start w-full">
-              <p className="text-sm text-black/70">
-                We help healthcare brands go digital with smooth, user-centric
-                tools built with data privacy in mind.
-              </p>
-              <p className="text-sm">Solutions we build:</p>
-              <div className="w-full flex flex-col justify-start items-start">
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">
-                    Patient management systems
-                  </p>
-                </div>
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">Telemedicine apps</p>
-                </div>
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">
-                    Appointment booking platforms
-                  </p>
-                </div>
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">
-                    Health monitoring dashboards
-                  </p>
-                </div>
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">Wellness apps</p>
+            <div className="flex flex-col justify-center gap-5 items-center w-screen">
+              <div className="flex flex-col justify-center items-center">
+                <h1 className="text-xl font-semibold">HealthTech</h1>
+                <p className="text-sm text-black/70 text-center">
+                  Secure and reliable solutions for medical and wellness
+                  services
+                </p>
+              </div>
+              <div className="flex flex-col gap-5 justify-start items-start w-full">
+                <p className="text-sm text-black/70">
+                  We help healthcare brands go digital with smooth, user-centric
+                  tools built with data privacy in mind.
+                </p>
+                <p className="text-sm">Solutions we build:</p>
+                <div className="w-full flex flex-col justify-start items-start">
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      Patient management systems
+                    </p>
+                  </div>
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">Telemedicine apps</p>
+                  </div>
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      Appointment booking platforms
+                    </p>
+                  </div>
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      Health monitoring dashboards
+                    </p>
+                  </div>
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">Wellness apps</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        {/* Logistics & Transportation  */}
-        <div className="flex flex-col justify-center items-center gap-5">
-          <div className="w-20 h-20 rounded-full bg-kleinBlue/20 flex flex-col justify-center items-center border-2 border-kleinBlue border-dotted">
-            <RiMotorbikeFill className="text-kleinBlue" size={30} />
-          </div>
-          <div className="flex flex-col justify-center gap-5 items-center w-full">
-            <div className="flex flex-col justify-center items-center">
-              <h1 className="text-xl font-semibold">
-                Logistics & Transportation
-              </h1>
-              <p className="text-sm text-black/70 text-center">
-                Powering smarter delivery and mobility operations
-              </p>
+          {/* Logistics & Transportation  */}
+          <div className="flex flex-col justify-center items-center gap-5">
+            <div className="w-20 h-20 rounded-full bg-kleinBlue/20 flex flex-col justify-center items-center border-2 border-kleinBlue border-dotted">
+              <RiMotorbikeFill className="text-kleinBlue" size={30} />
             </div>
-            <div className="flex flex-col gap-5 justify-start items-start w-full">
-              <p className="text-sm text-black/70">
-                We build automation-driven systems that help logistics companies
-                manage fleet, track deliveries, and optimize operations
-              </p>
-              <p className="text-sm">Solutions we build:</p>
-              <div className="w-full flex flex-col justify-start items-start">
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">
-                    Delivery tracking systems
-                  </p>
-                </div>
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">
-                    Fleet management tools
-                  </p>
-                </div>
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">Rider/driver apps</p>
-                </div>
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">
-                    Route optimization software
-                  </p>
-                </div>
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">Dispatch platforms</p>
+            <div className="flex flex-col justify-center gap-5 items-center w-screen">
+              <div className="flex flex-col justify-center items-center">
+                <h1 className="text-xl font-semibold">
+                  Logistics & Transportation
+                </h1>
+                <p className="text-sm text-black/70 text-center">
+                  Powering smarter delivery and mobility operations
+                </p>
+              </div>
+              <div className="flex flex-col gap-5 justify-start items-start w-full">
+                <p className="text-sm text-black/70">
+                  We build automation-driven systems that help logistics
+                  companies manage fleet, track deliveries, and optimize
+                  operations
+                </p>
+                <p className="text-sm">Solutions we build:</p>
+                <div className="w-full flex flex-col justify-start items-start">
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      Delivery tracking systems
+                    </p>
+                  </div>
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      Fleet management tools
+                    </p>
+                  </div>
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">Rider/driver apps</p>
+                  </div>
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      Route optimization software
+                    </p>
+                  </div>
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">Dispatch platforms</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        {/* Real Estate & Property  */}
-        <div className="flex flex-col justify-center items-center gap-5">
-          <div className="w-20 h-20 rounded-full bg-kleinBlue/20 flex flex-col justify-center items-center border-2 border-kleinBlue border-dotted">
-            <MdRealEstateAgent className="text-kleinBlue" size={30} />
-          </div>
-          <div className="flex flex-col justify-center gap-5 items-center w-full">
-            <div className="flex flex-col justify-center items-center">
-              <h1 className="text-xl font-semibold">Real Estate & Property</h1>
-              <p className="text-sm text-black/70 text-center">
-                Digital tools that help property businesses sell, manage, and
-                grow
-              </p>
+          {/* Real Estate & Property  */}
+          <div className="flex flex-col justify-center items-center gap-5">
+            <div className="w-20 h-20 rounded-full bg-kleinBlue/20 flex flex-col justify-center items-center border-2 border-kleinBlue border-dotted">
+              <MdRealEstateAgent className="text-kleinBlue" size={30} />
             </div>
-            <div className="flex flex-col gap-5 justify-start items-start w-full">
-              <p className="text-sm text-black/70">
-                We create solutions that make renting, buying, and managing
-                properties easier for users and agents
-              </p>
-              <p className="text-sm">Solutions we build:</p>
-              <div className="w-full flex flex-col justify-start items-start">
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">
-                    Property listing platforms
-                  </p>
-                </div>
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">
-                    Virtual tour solutions
-                  </p>
-                </div>
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">
-                    Agent management dashboards
-                  </p>
-                </div>
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">
-                    Tenant & rent management systems
-                  </p>
+            <div className="flex flex-col justify-center gap-5 items-center w-screen">
+              <div className="flex flex-col justify-center items-center">
+                <h1 className="text-xl font-semibold">
+                  Real Estate & Property
+                </h1>
+                <p className="text-sm text-black/70 text-center">
+                  Digital tools that help property businesses sell, manage, and
+                  grow
+                </p>
+              </div>
+              <div className="flex flex-col gap-5 justify-start items-start w-full">
+                <p className="text-sm text-black/70">
+                  We create solutions that make renting, buying, and managing
+                  properties easier for users and agents
+                </p>
+                <p className="text-sm">Solutions we build:</p>
+                <div className="w-full flex flex-col justify-start items-start">
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      Property listing platforms
+                    </p>
+                  </div>
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      Virtual tour solutions
+                    </p>
+                  </div>
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      Agent management dashboards
+                    </p>
+                  </div>
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      Tenant & rent management systems
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        {/* Hospitality & Travel  */}
-        <div className="flex flex-col justify-center items-center gap-5">
-          <div className="w-20 h-20 rounded-full bg-kleinBlue/20 flex flex-col justify-center items-center border-2 border-kleinBlue border-dotted">
-            <MdHotel className="text-kleinBlue" size={30} />
-          </div>
-          <div className="flex flex-col justify-center gap-5 items-center w-full">
-            <div className="flex flex-col justify-center items-center">
-              <h1 className="text-xl font-semibold">Hospitality & Travel</h1>
-              <p className="text-sm text-black/70 text-center">
-                Create delightful digital experiences for guests and travelers
-              </p>
+          {/* Hospitality & Travel  */}
+          <div className="flex flex-col justify-center items-center gap-5">
+            <div className="w-20 h-20 rounded-full bg-kleinBlue/20 flex flex-col justify-center items-center border-2 border-kleinBlue border-dotted">
+              <MdHotel className="text-kleinBlue" size={30} />
             </div>
-            <div className="flex flex-col gap-5 justify-start items-start w-full">
-              <p className="text-sm text-black/70">
-                We transform booking, management, and experience delivery for
-                hotels, restaurants, and travel agencies
-              </p>
-              <p className="text-sm">Solutions we build:</p>
-              <div className="w-full flex flex-col justify-start items-start">
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">Hotel booking systems</p>
-                </div>
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">
-                    Restaurant ordering platforms
-                  </p>
-                </div>
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">Travel planning apps</p>
-                </div>
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">
-                    Reservation & ticketing systems
-                  </p>
+            <div className="flex flex-col justify-center gap-5 items-center w-screen">
+              <div className="flex flex-col justify-center items-center">
+                <h1 className="text-xl font-semibold">Hospitality & Travel</h1>
+                <p className="text-sm text-black/70 text-center">
+                  Create delightful digital experiences for guests and travelers
+                </p>
+              </div>
+              <div className="flex flex-col gap-5 justify-start items-start w-full">
+                <p className="text-sm text-black/70">
+                  We transform booking, management, and experience delivery for
+                  hotels, restaurants, and travel agencies
+                </p>
+                <p className="text-sm">Solutions we build:</p>
+                <div className="w-full flex flex-col justify-start items-start">
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      Hotel booking systems
+                    </p>
+                  </div>
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      Restaurant ordering platforms
+                    </p>
+                  </div>
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      Travel planning apps
+                    </p>
+                  </div>
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      Reservation & ticketing systems
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        {/* Hospitality & Travel  */}
-        <div className="flex flex-col justify-center items-center gap-5">
-          <div className="w-20 h-20 rounded-full bg-kleinBlue/20 flex flex-col justify-center items-center border-2 border-kleinBlue border-dotted">
-            <MdHotel className="text-kleinBlue" size={30} />
-          </div>
-          <div className="flex flex-col justify-center gap-5 items-center w-full">
-            <div className="flex flex-col justify-center items-center">
-              <h1 className="text-xl font-semibold text-center">
-                Startups (General Emerging Markets)
-              </h1>
-              <p className="text-sm text-black/70 text-center">
-                Perfect for early-stage teams building from zero to one
-              </p>
+          {/* Hospitality & Travel  */}
+          <div className="flex flex-col justify-center items-center gap-5">
+            <div className="w-20 h-20 rounded-full bg-kleinBlue/20 flex flex-col justify-center items-center border-2 border-kleinBlue border-dotted">
+              <MdHotel className="text-kleinBlue" size={30} />
             </div>
-            <div className="flex flex-col gap-5 justify-start items-start w-full">
-              <p className="text-sm text-black/70">
-                We help startups validate ideas, build MVPs, and scale quickly
-                without heavy overhead
-              </p>
-              <p className="text-sm">Solutions we build:</p>
-              <div className="w-full flex flex-col justify-start items-start">
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">MVP development</p>
-                </div>
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">
-                    Prototype & UI/UX design
-                  </p>
-                </div>
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">
-                    Market-ready web/mobile apps
-                  </p>
-                </div>
-                <div className="flex flex-row gap-3 items-center justify-start">
-                  <IoMdCheckmark className="text-kleinBlue" />
-                  <p className="text-sm text-black/70">
-                    Iteration & product improvement
-                  </p>
+            <div className="flex flex-col justify-center gap-5 items-center w-screen">
+              <div className="flex flex-col justify-center items-center">
+                <h1 className="text-xl font-semibold text-center">
+                  Startups (General Emerging Markets)
+                </h1>
+                <p className="text-sm text-black/70 text-center">
+                  Perfect for early-stage teams building from zero to one
+                </p>
+              </div>
+              <div className="flex flex-col gap-5 justify-start items-start w-full">
+                <p className="text-sm text-black/70">
+                  We help startups validate ideas, build MVPs, and scale quickly
+                  without heavy overhead
+                </p>
+                <p className="text-sm">Solutions we build:</p>
+                <div className="w-full flex flex-col justify-start items-start">
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">MVP development</p>
+                  </div>
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      Prototype & UI/UX design
+                    </p>
+                  </div>
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      Market-ready web/mobile apps
+                    </p>
+                  </div>
+                  <div className="flex flex-row gap-3 items-center justify-start">
+                    <IoMdCheckmark className="text-kleinBlue" />
+                    <p className="text-sm text-black/70">
+                      Iteration & product improvement
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -479,9 +489,12 @@ const OurSuccess = () => {
       </div>
 
       <div className="flex flex-col w-full justify-center mt-5 items-center">
-        <Button className="bg-kleinBlue text-plainWhite hover:scale-105">
+        <Link
+          href={"/service"}
+          className=" text-kleinBlue hover:scale-105 transition-all duration-500 ease-in-out underline underline-offset-2 hover:no-underline"
+        >
           More Services
-        </Button>
+        </Link>
       </div>
     </div>
   );
